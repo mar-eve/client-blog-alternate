@@ -58,25 +58,14 @@ a:active {
 #fix {
 	position:fixed;
 }
-.col-10{
+.col-11{
 	//margin-left: 25%;
 	margin-right:0;
 	padding-left: 0;
 	padding-right: 0;
-	position: static;
 }
 
-.fill {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden
-}
-.fill img {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%
-}
+
 
 header {
 	opacity: 1;
@@ -98,8 +87,6 @@ header {
 	}
 }
 
-
-
 h1.title {
 	font-family: 'Cabin Sketch', cursive;
 	/*font-family: 'NTR', sans-serif;*/
@@ -109,9 +96,9 @@ h1.title {
 	text-align: center;
 	/*color: #e8ce7e;*/
 }
-.col-10.main-content {
-	position: relative;
-}
+//.col-11.main-content {
+//	position: relative;
+//}
 .main-content {
 	z-index: 11;
 }
@@ -128,7 +115,13 @@ main {
 	display: flex;
 	background: rgba(255,255,255, 1);
 	flex-direction: column;
+
+.balls {
+	align-self: center;
 	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
 }
 
 article img {
@@ -166,12 +159,6 @@ div.pastposts {
 }
 
 
-.balls {
-	align-self: center;
-	width: 100%;
-	max-width: 100%;
-	height: auto;
-}
 
 
 .pastposts img {

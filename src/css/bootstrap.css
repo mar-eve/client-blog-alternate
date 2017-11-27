@@ -5731,22 +5731,10 @@ a:active {
 #fix {
   position: fixed; }
 
-.col-10 {
+.col-11 {
   margin-right: 0;
   padding-left: 0;
-  padding-right: 0;
-  position: static; }
-
-.fill {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden; }
-
-.fill img {
-  flex-shrink: 0;
-  min-width: 100%;
-  min-height: 100%; }
+  padding-right: 0; }
 
 header {
   opacity: 1;
@@ -5770,9 +5758,6 @@ h1.title {
   text-align: center;
   /*color: #e8ce7e;*/ }
 
-.col-10.main-content {
-  position: relative; }
-
 .main-content {
   z-index: 11; }
 
@@ -5784,8 +5769,12 @@ main {
   position: relative;
   display: flex;
   background: white;
-  flex-direction: column;
-  width: 100%; }
+  flex-direction: column; }
+  main .balls {
+    align-self: center;
+    width: 100%;
+    max-width: 100%;
+    height: auto; }
 
 article img {
   padding: 5%; }
@@ -5810,12 +5799,6 @@ div.pastposts {
 .pastbloglinks a {
   color: #000;
   margin: 0 5%; }
-
-.balls {
-  align-self: center;
-  width: 100%;
-  max-width: 100%;
-  height: auto; }
 
 .pastposts img {
   width: 50%;
