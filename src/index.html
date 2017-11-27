@@ -8,24 +8,26 @@
 </head>
 <body>
 	<div class="container-fluid">
-		<div class = "row top" id="fix">
-			<nav class="col-1 menu">
-	 			<a href="#">Home</a>
-	 			<a href="#">About</a>
-	 			<a href="#">Contact</a>
-	 			<a href="#">Blog Posts</a>
+		<div class = "row" id="fix">
+			<nav class="col-12">
+				<ul>
+				<li class="lena">Strawberry Pi</li>
+	 			<li><a href="#">Home</a></li>
+	 			<li><a href="#">About</a></li>
+	 			<li><a href="#">Contact</a></li>
+	 			<li><a href="#">Blog Posts</a></li>
+	 		</ul>
 	 		</nav>
-	 		<header class="col-11">
-	 			<img src="images/background-strawberry.jpg">
+	 		<header class="col-12 header-img">
+	 			<img class="img-fluid berry" src="images/singleBerry1.jpg">
 	 			<h1>Strawberry Pi</h1>
-	 			<h2>Lina Pan</h2>
+	 		
 	   		</header>
 	   	</div>
 
-	   	<div class="row">
-	   		<div class="col-1">
-	   		</div>
-	   		<main class = "col-11 main-content"> 	
+	  	<div class="row">
+	   		
+	   		<main class = "col-12 main-content">	
 	 			
 	 				 <img class=" img-fluid balls" src="images/smileBalls.jpg" alt="smiley face amongst many frowning faces" height="427px" width="640px">
 				
@@ -68,7 +70,8 @@
 				</div>	-->	
 	   		</main>
    		</div>
-   		<footer class="row">
+   		<footer class="row foot">
+   			<div class="col-12">
    			<a class="subscribe" href="#"> Subscribe </a>
    			<div id="social-media">	
 			    <a href="#"><img id="facebook" src="images/facebook.png" alt="facebook icon" height="257px" width="258px"></a>
@@ -76,7 +79,7 @@
 			    <a href="#"><img id="instagram" src="images/instagram.png" alt="facebook icon" height="182px" width="184px"></a>
 			</div>
 			<p> copyright Lina Pan</p>
-		
+		</div>
 		</footer>
 	</div>
 	<script
@@ -85,9 +88,12 @@
   crossorigin="anonymous"></script>
   <script>
   	var h = $(window).height();
-  	console.log(h+"px");
-  	$(".top").height(h);
+  	//var mainHeight = $(".main-content").height();
+  //	console.log(h+"px");
+  //	console.log(h+mainHeight);
+  	$(".header-img").height(h-70);
   	$(".main-content").css("top",h+"px");
+    $("footer").css("top",h+"px");
   </script>
 
 

@@ -2,15 +2,22 @@
 //
 // Copy variables from `_variables.scss` to this file to override default values
 // without modifying source files.
+
+$pink: #ed2461;
+$gray: #ecebe6;
+
+
 body {
 }
-.menu {
-	//position: fixed;
+
+#fix {
+	position:fixed;
 }
 nav {
+	z-index: 50;
 	display: flex;
-	flex-direction: column;
-	
+	flex-direction: row;
+	height: 70px;
 	justify-content: center;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ed2461+0,e899b0+100 */
 	background: #ed2461; /* Old browsers */
@@ -19,71 +26,61 @@ nav {
 	background: linear-gradient(to right, #ed2461 0%,#e899b0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed2461', endColorstr='#e899b0',GradientType=1 ); /* IE6-9 */
 }
+li {
+	display: inline-block;
+}
 a{
 	font-family: 'NTR', sans-serif;
-	font-size: 20px;
+	font-size: 30px;
 	color:#ecebe6 ;	
 	text-decoration: none;
-	display:inline-block;
 	padding: 20px 20px;
 }
 
-a:link{
-
-}
-a:visited {
-
-}
 
 a:hover {
-	height: 28px; 
-	background: #ededed; 
+	text-decoration: none;
 	color: #fff;
-	font-size: 20px;
+	font-size: 33px;
 	border: none;
 	font-weight: bold;
-	padding: 20px 20px;
-	border: solid #fff 1px;
-	text-shadow: 2px 2px 2px rgba(210, 200, 190, 1);
-	border-radius: 5px;
 }
-.pastbloglinks a:hover{
-	color: #aaa;
-}
+
 
 a:active {
 	background: #ecebe6;
 	color: #ed2461;
 }
-#fix {
-	position:fixed;
-}
-.col-11{
-	//margin-left: 25%;
-	margin-right:0;
-	padding-left: 0;
-	padding-right: 0;
-}
-
-
 
 header {
-	opacity: 1;
+	opacity: 0.5;
 	position: relative;
-		//background: #ecebe6 url("../images/singleBerry1.jpg");
-	//background-repeat:no-repeat; 
-	//background-position:right; 
+	background: #ecebe6 url("../images/singleBerry1.jpg");
+	background-repeat: repeat-x;
+	background-size: cover;
 	margin: 0;
 
-	h1, h2 {
+	h1 {
 
 	font-family: 'Cabin Sketch', cursive;
 	font-size: 106px;
 	/*color: #e8ce7e;*/
-	color:#ecebe6;
+	color: $pink;
     padding: 0;
     margin-top: -500px;
     margin-left: 8%;
+	}
+	h2 {
+		font-family: 'Cabin Sketch', cursive;
+		font-size: 90px;
+	/*color: #e8ce7e;*/
+		color: $pink;
+	}
+	.berry {
+		width: auto;
+		max-height: 100%;
+		height: 100%;
+		margin: 0 auto;
 	}
 }
 
@@ -101,6 +98,7 @@ h1.title {
 //}
 .main-content {
 	z-index: 11;
+	opacity: 1;
 }
 
 main p{
@@ -129,44 +127,6 @@ article img {
 }
 
 
-
-div.pastposts {
-	display: flex;
-	flex-direction: column;
-	background-color: #ffffff;
-	margin: 0 3% 0 0;
-	padding-top: 15%;
-	width: 27%;
-}
-
-
-.pastposts h2 {
-	color:#000;
-	margin-top: 3%;
-	font-family: 'NTR', sans-serif;
-	font-size: 30px;
-
-}
-
-.pastbloglinks img{
-   margin-bottom: -80px;
-
-}
-
-.pastbloglinks a {
-	color:#000;
-	margin: 0 5%;
-}
-
-
-
-
-.pastposts img {
-	width: 50%;
-	max-width: 100;
-	height: auto;
-	padding: 5% 0 20% 20%;
-}
 .selfie {
 	width: 50%;
 	max-width: 50%;
@@ -184,6 +144,7 @@ footer {
 	/*display: flex;
 	flex-direction: row;
 	justify-content: center;*/
+	position: relative;
 	background-color: #ed2461;
 	height: 100px;
 	width: 100%;
@@ -224,4 +185,46 @@ footer p {
 	width: 23%;
 	max-width: 50%;
 	height: auto
+}
+
+
+
+
+
+div.pastposts {
+	display: flex;
+	flex-direction: column;
+	background-color: #ffffff;
+	margin: 0 3% 0 0;
+	padding-top: 15%;
+	width: 27%;
+}
+
+
+.pastposts h2 {
+	color:#000;
+	margin-top: 3%;
+	font-family: 'NTR', sans-serif;
+	font-size: 30px;
+
+}
+
+.pastbloglinks img{
+   margin-bottom: -80px;
+
+}
+
+.pastbloglinks a {
+	color:#000;
+	margin: 0 5%;
+}
+
+
+
+
+.pastposts img {
+	width: 50%;
+	max-width: 100;
+	height: auto;
+	padding: 5% 0 20% 20%;
 }
