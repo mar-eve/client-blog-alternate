@@ -5684,3 +5684,191 @@ a.text-dark:focus, a.text-dark:hover {
 
 .invisible {
   visibility: hidden !important; }
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ed2461+0,e899b0+100 */
+  background: #ed2461;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #ed2461 0%, #e899b0 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #ed2461 0%, #e899b0 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #ed2461 0%, #e899b0 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed2461', endColorstr='#e899b0',GradientType=1 );
+  /* IE6-9 */ }
+
+a {
+  font-family: 'NTR', sans-serif;
+  font-size: 20px;
+  color: #ecebe6;
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px 20px; }
+
+a:hover {
+  height: 28px;
+  background: #ededed;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  font-weight: bold;
+  padding: 20px 20px;
+  border: solid #fff 1px;
+  text-shadow: 2px 2px 2px #d2c8be;
+  border-radius: 5px; }
+
+.pastbloglinks a:hover {
+  color: #aaa; }
+
+a:active {
+  background: #ecebe6;
+  color: #ed2461; }
+
+#fix {
+  position: fixed; }
+
+.col-10 {
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  position: static; }
+
+.fill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; }
+
+.fill img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%; }
+
+header {
+  opacity: 1;
+  position: relative;
+  margin: 0; }
+  header h1, header h2 {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 106px;
+    /*color: #e8ce7e;*/
+    color: #ecebe6;
+    padding: 0;
+    margin-top: -500px;
+    margin-left: 8%; }
+
+h1.title {
+  font-family: 'Cabin Sketch', cursive;
+  /*font-family: 'NTR', sans-serif;*/
+  font-size: 56px;
+  font-weight: 900;
+  color: #ed2461;
+  text-align: center;
+  /*color: #e8ce7e;*/ }
+
+.col-10.main-content {
+  position: relative; }
+
+.main-content {
+  z-index: 11; }
+
+main p {
+  font-family: 'NTR', sans-serif;
+  font-size: 22px; }
+
+main {
+  position: relative;
+  display: flex;
+  background: white;
+  flex-direction: column;
+  width: 100%; }
+
+article img {
+  padding: 5%; }
+
+div.pastposts {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  margin: 0 3% 0 0;
+  padding-top: 15%;
+  width: 27%; }
+
+.pastposts h2 {
+  color: #000;
+  margin-top: 3%;
+  font-family: 'NTR', sans-serif;
+  font-size: 30px; }
+
+.pastbloglinks img {
+  margin-bottom: -80px; }
+
+.pastbloglinks a {
+  color: #000;
+  margin: 0 5%; }
+
+.balls {
+  align-self: center;
+  width: 100%;
+  max-width: 100%;
+  height: auto; }
+
+.pastposts img {
+  width: 50%;
+  max-width: 100;
+  height: auto;
+  padding: 5% 0 20% 20%; }
+
+.selfie {
+  width: 50%;
+  max-width: 50%;
+  height: auto;
+  float: left; }
+
+.horse {
+  width: 40%;
+  max-width: 50%;
+  height: auto;
+  float: right; }
+
+footer {
+  /*display: flex;
+	flex-direction: row;
+	justify-content: center;*/
+  background-color: #ed2461;
+  height: 100px;
+  width: 100%; }
+
+.subscribe a {
+  display: inline-block;
+  height: 20px;
+  width: 30px;
+  border: solid #fff 1px; }
+
+footer p {
+  display: inline-block;
+  font-size: 17px;
+  text-align: right; }
+
+#social-media {
+  padding: 5px;
+  display: inline-block; }
+
+#facebook {
+  width: 13%;
+  max-width: 20%;
+  height: auto; }
+
+#twitter {
+  width: 100%;
+  max-width: 100%;
+  height: auto; }
+
+#instagram {
+  width: 23%;
+  max-width: 50%;
+  height: auto; }
