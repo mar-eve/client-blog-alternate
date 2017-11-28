@@ -5689,7 +5689,7 @@ a.text-dark:focus, a.text-dark:hover {
   position: fixed; }
 
 nav {
-  z-index: 50;
+  z-index: 100;
   display: flex;
   flex-direction: row;
   height: 70px;
@@ -5705,43 +5705,63 @@ nav {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed2461', endColorstr='#e899b0',GradientType=1 );
   /* IE6-9 */ }
-
-li {
-  display: inline-block; }
-
-a {
-  font-family: 'NTR', sans-serif;
-  font-size: 30px;
-  color: #ecebe6;
-  text-decoration: none;
-  padding: 20px 20px; }
-
-a:hover {
-  text-decoration: none;
-  color: #fff;
-  font-size: 33px;
-  border: none;
-  font-weight: bold; }
-
-a:active {
-  background: #ecebe6;
-  color: #ed2461; }
+  nav .fa {
+    display: inline-block;
+    margin-left: -91%;
+    font-size: 30px;
+    padding-top: 19px;
+    color: #ecebe6; }
+    @media (min-width: 596px) {
+      nav .fa {
+        display: none; } }
+  nav li {
+    display: none; }
+    @media (min-width: 596px) {
+      nav li {
+        display: inline-block; } }
+  nav a {
+    font-family: 'NTR', sans-serif;
+    font-size: 30px;
+    color: #ecebe6;
+    text-decoration: none;
+    padding: 20px 20px; }
+  nav a:hover {
+    text-decoration: none;
+    color: #fff;
+    font-size: 33px;
+    border: none;
+    font-weight: bold; }
+  nav a:active {
+    background: #ecebe6;
+    color: #ed2461; }
 
 header {
-  opacity: 0.5;
+  opacity: 1;
   position: relative;
-  background: #ecebe6 url("../images/singleBerry1.jpg");
-  background-repeat: repeat-x;
-  background-size: cover;
+  background: #ecebe6 url("../images/singleBerryMobile.jpg") repeat-x;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: contain;
   margin: 0; }
+  @media (min-width: 596px) {
+    header {
+      background: #ecebe6 url("../images/singleBerry1.jpg") repeat-x;
+      background-position: center center;
+      background-attachment: fixed;
+      background-size: contain; } }
   header h1 {
     font-family: 'Cabin Sketch', cursive;
-    font-size: 106px;
+    font-size: 60px;
     /*color: #e8ce7e;*/
     color: #ed2461;
-    padding: 0;
-    margin-top: -500px;
+    padding-top: 80px;
+    text-align: left;
+    margin-top: 15px;
     margin-left: 8%; }
+    @media (min-width: 665px) {
+      header h1 {
+        padding-top: 35px;
+        font-size: 100px; } }
   header h2 {
     font-family: 'Cabin Sketch', cursive;
     font-size: 90px;
@@ -5763,8 +5783,14 @@ h1.title {
   /*color: #e8ce7e;*/ }
 
 .main-content {
-  z-index: 11;
+  z-index: 10;
   opacity: 1; }
+  .main-content h1 {
+    z-index: 11;
+    background: #000;
+    color: #ecebe6;
+    padding-top: 50px;
+    margin-bottom: -110px; }
 
 main p {
   font-family: 'NTR', sans-serif;

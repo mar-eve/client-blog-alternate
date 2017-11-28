@@ -4,12 +4,14 @@
 	<title>Client Blog</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|NTR" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" >
 </head>
 <body>
 	<div class="container-fluid">
 		<div class = "row" id="fix">
 			<nav class="col-12">
+				<i class="fa fa-bars" aria-hidden="true"></i>
 				<ul>
 				<li class="lena">Strawberry Pi</li>
 	 			<li><a href="#">Home</a></li>
@@ -19,7 +21,7 @@
 	 		</ul>
 	 		</nav>
 	 		<header class="col-12 header-img">
-	 			<img class="img-fluid berry" src="images/singleBerry1.jpg">
+	 			
 	 			<h1>Strawberry Pi</h1>
 	 		
 	   		</header>
@@ -28,15 +30,15 @@
 	  	<div class="row">
 	   		
 	   		<main class = "col-12 main-content">	
-	 			
+	 				<h1 class="title">Turning that Frown Upside Down</h1>
 	 				 <img class=" img-fluid balls" src="images/smileBalls.jpg" alt="smiley face amongst many frowning faces" height="427px" width="640px">
 				
-	 				<h1 class="title">Turning that Frown Upside Down</h1>
+	 			
 
 					<article>
-	   					<p> Vivamus tristique ex erat, id porta enim convallis porttitor. Phasellus sit amet ipsum eros. Sed quis tortor leo. Aenean suscipit pretium cursus. Nullam justo ante, vulputate id ornare in, cursus a metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit, massa ut convallis interdum, urna sem varius tortor, sed sollicitudin enim enim quis lectus. Vivamus feugiat mauris eget felis aliquet, sed porta massa tempor. Vestibulum ut convallis lorem. Curabitur in sagittis tortor, a suscipit magna. Morbi eget enim eget ante mattis volutpat ut vitae ligula. Ut magna odio, ullamcorper eu nunc quis, porta tempus leo. Maecenas id velit tortor. Nulla facilisi. Morbi ut tellus elementum, efficitur neque vel, accumsan lectus. Donec dapibus, ligula consectetur maximus congue, ligula massa semper tortor, vitae sagittis ipsum orci vel felis.</p>
+	   					<p> Vivamus tristique ex erat, id porta enim convallis porttitor. Phasellus sit amet ipsum eros. Sed quis tortor leo. Aenean suscipit pretium cursus. Nullam justo ante, vulputate id ornare in, cursus a metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit, massa ut convallis interdum, urna sem varius tortor, sed sollicitudin enim enim quis lectus. Vivamus feugiat mauris eget felis aliquet, sed porta massa tempor. </p><p>Vestibulum ut convallis lorem. Curabitur in sagittis tortor, a suscipit magna. Morbi eget enim eget ante mattis volutpat ut vitae ligula. Ut magna odio, ullamcorper eu nunc quis, porta tempus leo. Maecenas id velit tortor. Nulla facilisi. Morbi ut tellus elementum, efficitur neque vel, accumsan lectus. Donec dapibus, ligula consectetur maximus congue, ligula massa semper tortor, vitae sagittis ipsum orci vel felis.</p>
 
-						<p>Sed bibendum tempor dictum. Proin vel pellentesque metus. Curabitur quis orci ut neque convallis sodales vel vel odio. Phasellus euismod, ante in consequat dictum, mauris lectus gravida sem, vel gravida magna magna sit amet est. Aenean dictum ante vitae odio vulputate ultricies. Vestibulum tempus magna nibh, sit amet efficitur metus vestibulum sed. Donec placerat pulvinar justo id ullamcorper. Suspendisse potenti. Donec justo leo, dapibus ut mauris sed, accumsan pharetra mauris. Pellentesque malesuada rhoncus justo in facilisis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque blandit nisl diam, vel tempus mi semper quis.</p>
+					 <p>Donec justo leo, dapibus ut mauris sed, accumsan pharetra mauris. Pellentesque malesuada rhoncus justo in facilisis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque blandit nisl diam, vel tempus mi semper quis.</p>
 						<img class="selfie" src="images/selfie.jpg" alt="smiling ape" width="463px" height="640px">
 						<p>Nulla quam metus, ornare vitae iaculis ut, facilisis ac eros. Donec sit amet rhoncus lectus, et vulputate justo. Sed risus nibh, aliquam sed gravida et, commodo id arcu. Morbi aliquet velit risus, eget congue urna maximus ac. Nam imperdiet nisl id sapien fringilla, vel tempus mi sagittis. In in ante ut lectus pretium pharetra fermentum facilisis arcu. Mauris magna diam, tempus quis aliquam id, accumsan vitae leo. In dictum magna vel maximus sagittis.</p>
 
@@ -88,15 +90,19 @@
   crossorigin="anonymous"></script>
   <script>
   	var h = $(window).height();
+  	var w = $(window).width();
   	//var mainHeight = $(".main-content").height();
   //	console.log(h+"px");
   //	console.log(h+mainHeight);
-  	$(".header-img").height(h-70);
+  	$(".header-img").height(h);
+  	$(".header-img").width(w);
   	$(".main-content").css("top",h+"px");
     $("footer").css("top",h+"px");
   </script>
 
-
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
 	</body>
 </html>
