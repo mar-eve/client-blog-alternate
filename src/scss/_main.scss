@@ -5,7 +5,7 @@
 
 $pink: #ed2461;
 $gray: #ecebe6;
-
+$darkgray: #e5e5e5;
 
 body {
 }
@@ -16,37 +16,61 @@ body {
 nav {
 	z-index: 100;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	height: 70px;
-	justify-content: center;
+	justify-content: left;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ed2461+0,e899b0+100 */
 	background: #ed2461; /* Old browsers */
 	background: -moz-linear-gradient(left, #ed2461 0%, #e899b0 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(left, #ed2461 0%,#e899b0 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to right, #ed2461 0%,#e899b0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed2461', endColorstr='#e899b0',GradientType=1 ); /* IE6-9 */
-	
-	.fa {
-		display: inline-block;
-		margin-left: -91%;
-		font-size: 30px;
-		padding-top: 19px;
-		color: $gray;
-
-	   @media(min-width: 596px){
-	   	display: none;
-	   }
-
+	@media(min-width: 768px){
+		justify-content: center;
 	}
-	li {
-		display:none;
-		@media (min-width: 596px){
-			display: inline-block;
+	button {
+		background: transparent;
+		width: 30px;
+		position: relative;
+		margin: 22px 10px;
+		border: 0;
+		border-top: 3px solid #fff;
+		border-bottom: 3px solid #fff;
+		border-radius: 0;
+		font-size: 10px;
+		color: $gray;
+		@media(min-width: 768px){
+			display:none;
 		}
 	}
+	button:before {
+		content: "\00a0";
+		width: 30px;
+		position: absolute;
+		left: 0;
+		top: 13px;
+		border-top: 3px solid #fff;
+	}
+	ul {
+		margin-top: 15px;
+	}
+	li:first-of-type{
+			padding-right: 5%;
+			}
+	li {
+		display:none;
+		@media (min-width: 768px){
+			display: inline-block;
+			font-size: 28px;
+			color: $gray;
+
+		}
+	}
+		
+	
 	a{
 		font-family: 'NTR', sans-serif;
-		font-size: 30px;
+		font-size: 22px;
 		color:#ecebe6 ;	
 		text-decoration: none;
 		padding: 20px 20px;
@@ -54,12 +78,10 @@ nav {
 	a:hover {
 		text-decoration: none;
 		color: #fff;
-		font-size: 33px;
+		font-size: 28px;
 		border: none;
 		font-weight: bold;
 	}
-
-
 	a:active {
 		background: #ecebe6;
 		color: #ed2461;
@@ -84,7 +106,7 @@ header {
 
 //background: rgba(230, 230, 230, 0.5);
 		font-family: 'Cabin Sketch', cursive;
-		font-size: 60px;
+		font-size: 55px;
 		/*color: #e8ce7e;*/
 		color: $pink;
 	    padding-top: 80px;
