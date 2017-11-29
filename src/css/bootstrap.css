@@ -5685,6 +5685,9 @@ a.text-dark:focus, a.text-dark:hover {
 .invisible {
   visibility: hidden !important; }
 
+body {
+  font-family: 'NTR', sans-serif; }
+
 #fix {
   position: fixed; }
 
@@ -5694,17 +5697,7 @@ nav {
   flex-direction: column;
   height: 70px;
   justify-content: left;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ed2461+0,e899b0+100 */
-  background: #ed2461;
-  /* Old browsers */
-  background: -moz-linear-gradient(left, #ed2461 0%, #e899b0 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(left, #ed2461 0%, #e899b0 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #ed2461 0%, #e899b0 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed2461', endColorstr='#e899b0',GradientType=1 );
-  /* IE6-9 */ }
+  background: #ed2461; }
   @media (min-width: 768px) {
     nav {
       justify-content: center; } }
@@ -5856,16 +5849,54 @@ h1.title {
     max-width: 100%;
     height: auto; }
 
-footer {
-  /*display: flex;
-	flex-direction: row;
-	justify-content: center;*/
+.musicians {
+  background: #ecebe6;
+  height: 1280px;
+  width: 110%;
+  position: sticky;
+  top: 0px;
+  margin-right: 0;
+  margin-left: -15px;
+  padding: 0; }
+  @media (min-width: 680px) {
+    .musicians {
+      top: 0; } }
+  @media (min-width: 1000px) {
+    .musicians {
+      top: -100px; } }
+  .musicians .musician-col {
+    padding: 0; }
+  .musicians img {
+    width: 180%;
+    margin: 0 auto; }
+    @media (min-width: 680px) {
+      .musicians img {
+        width: 100%; } }
+
+.quote {
+  background: transparent;
+  opacity: 1;
+  color: #fff;
+  padding: 20px;
+  padding-top: 500px; }
+  .quote p {
+    font-size: 25px;
+    background: rgba(50, 50, 50, 0.5);
+    opacity: 0.9; }
+    @media (min-width: 680px) {
+      .quote p {
+        font-size: 45px; } }
+
+.foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   position: relative;
-  background-color: #ed2461;
+  background-color: #ecebe6;
   height: 100px;
   width: 100%; }
 
-.subscribe a {
+.subscribe {
   display: inline-block;
   height: 20px;
   width: 30px;
@@ -5874,50 +5905,17 @@ footer {
 footer p {
   display: inline-block;
   font-size: 17px;
+  color: #ed2461;
   text-align: right; }
 
 #social-media {
-  padding: 5px;
-  display: inline-block; }
-
-#facebook {
-  width: 13%;
-  max-width: 20%;
-  height: auto; }
-
-#twitter {
-  width: 100%;
-  max-width: 100%;
-  height: auto; }
-
-#instagram {
-  width: 23%;
-  max-width: 50%;
-  height: auto; }
-
-div.pastposts {
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
-  margin: 0 3% 0 0;
-  padding-top: 15%;
-  width: 27%; }
-
-.pastposts h2 {
-  color: #000;
-  margin-top: 3%;
-  font-family: 'NTR', sans-serif;
-  font-size: 30px; }
-
-.pastbloglinks img {
-  margin-bottom: -80px; }
-
-.pastbloglinks a {
-  color: #000;
-  margin: 0 5%; }
-
-.pastposts img {
-  width: 50%;
-  max-width: 100;
-  height: auto;
-  padding: 5% 0 20% 20%; }
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  display: inherit;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #ed2461; }
+  #social-media li {
+    padding-right: 20px; }

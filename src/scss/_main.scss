@@ -8,6 +8,7 @@ $gray: #ecebe6;
 $darkgray: #e5e5e5;
 
 body {
+	font-family: 'NTR', sans-serif;
 }
 
 #fix {
@@ -19,12 +20,8 @@ nav {
 	flex-direction: column;
 	height: 70px;
 	justify-content: left;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ed2461+0,e899b0+100 */
-	background: #ed2461; /* Old browsers */
-	background: -moz-linear-gradient(left, #ed2461 0%, #e899b0 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(left, #ed2461 0%,#e899b0 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to right, #ed2461 0%,#e899b0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed2461', endColorstr='#e899b0',GradientType=1 ); /* IE6-9 */
+	background: $pink; 
+
 	@media(min-width: 768px){
 		justify-content: center;
 	}
@@ -88,18 +85,18 @@ nav {
 	}
 }
 header {
-	opacity: 1;
-	position: relative;
-	background: #ecebe6 url("../images/singleBerryMobile.jpg") repeat-x;
-	background-position: center center;
-	background-attachment: fixed;
-	background-size: contain;
-	margin: 0;
+		opacity: 1;
+		position: relative;
+		background: #ecebe6 url("../images/singleBerryMobile.jpg") repeat-x;
+		background-position: center center;
+		background-attachment: fixed;
+		background-size: contain;
+		margin: 0;
 	@media (min-width: 596px){
 		background: #ecebe6 url("../images/singleBerry1.jpg") repeat-x;
 		background-position: center center;
-	background-attachment: fixed;
-	background-size: contain;
+		background-attachment: fixed;
+		background-size: contain;
 	}
 
 	h1 {
@@ -211,24 +208,66 @@ h1.title {
 }
 
 
-
+.musicians {
+	background: $gray;
+	height: 1280px;
+	width: 110%;
+	position: sticky;
+	top: 0px;
+	margin-right: 0;
+	margin-left: -15px;
+	padding: 0;
+	@media(min-width: 680px){
+		top: 0;
+	}
+@media(min-width: 1000px){
+	top: -100px;
+}
+	.musician-col {
+		padding:0;
+	}
+	img {
+		width: 180%;
+		margin: 0 auto;
+		@media(min-width:680px){
+			width: 100%;
+		}
+	}
+}
 	
+.quote {
+	background: transparent;
+	opacity: 1;
+	color: #fff;
+	padding: 20px;
+	padding-top: 500px;
+	
+	p {
+	font-size: 25px;
+
+		background: rgba(50,50,50,0.5);
+		opacity: 0.9;
+		@media(min-width: 680px){
+			font-size: 45px;
+		}
+
+		
+	}
+}	
 
 
-
-
-footer {
-	/*display: flex;
+.foot {
+	display: flex;
 	flex-direction: row;
-	justify-content: center;*/
+	justify-content: space-between;
 	position: relative;
-	background-color: #ed2461;
+	background-color: $gray;
 	height: 100px;
 	width: 100%;
 	
 }
 
-.subscribe a {
+.subscribe  {
 	display: inline-block;
 	height: 20px;
 	width: 30px;
@@ -239,69 +278,25 @@ footer {
 footer p {
 	display: inline-block;
 	font-size: 17px;
+	color: $pink;
 	text-align: right;
 }
 
 
 #social-media {
-	padding: 5px;
-	display: inline-block;
-}
-
-#facebook {
-	width: 13%;
-	max-width: 20%;
-	height: auto;
-}
-#twitter {
-	width: 100%;
-	max-width: 100%;
-	height: auto;
-}
-#instagram {
-	width: 23%;
-	max-width: 50%;
-	height: auto
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding-top: 20px;
+	display: inherit;
+	font-size: 2rem;
+	text-decoration: none;
+	color: $pink;
+	li{
+		padding-right: 20px;
+	}
+	
 }
 
 
 
-
-
-div.pastposts {
-	display: flex;
-	flex-direction: column;
-	background-color: #ffffff;
-	margin: 0 3% 0 0;
-	padding-top: 15%;
-	width: 27%;
-}
-
-
-.pastposts h2 {
-	color:#000;
-	margin-top: 3%;
-	font-family: 'NTR', sans-serif;
-	font-size: 30px;
-
-}
-
-.pastbloglinks img{
-   margin-bottom: -80px;
-
-}
-
-.pastbloglinks a {
-	color:#000;
-	margin: 0 5%;
-}
-
-
-
-
-.pastposts img {
-	width: 50%;
-	max-width: 100;
-	height: auto;
-	padding: 5% 0 20% 20%;
-}

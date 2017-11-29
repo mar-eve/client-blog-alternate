@@ -4,8 +4,8 @@
 	<title>Client Blog</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|NTR" rel="stylesheet">
-
-	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" >
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
 </head>
 <body>
 	<div class="container-fluid">
@@ -72,16 +72,28 @@
 				</div>	-->	
 	   		</main>
    		</div>
-   		<footer class="row foot">
+   		<div class="row musicians">
+   			<div class="col-12 musician-col">
+   				<img  src="images/color.jpg" alt="musicians at night">
+   			</div>
+   		</div>
+   		<div class="row quote">
    			<div class="col-12">
-   			<a class="subscribe" href="#"> Subscribe </a>
-   			<div id="social-media">	
-			    <a href="#"><img id="facebook" src="images/facebook.png" alt="facebook icon" height="257px" width="258px"></a>
-			    <a href="#"><img id="twitter" src="images/twitter.png" alt="facebook icon" height="48px" width="48px"></a>
-			    <a href="#"><img id="instagram" src="images/instagram.png" alt="facebook icon" height="182px" width="184px"></a>
+   				<p>“If more of us valued food and cheer and song above hoarded gold, it would be a merrier world.” 
+				<br>J.R.R. Tolkien</p>
+   			</div>
+   		</div>
+   			
+   		<footer class="row">
+   			<div class="col-12 foot">
+   				<a class="subscribe" href="#"> Subscribe </a>
+   				<ul id="social-media">	
+			    	<li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
+			    	<li><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
+			    	<li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+				</ul>
+				<p> &copy Strawberry Pi</p>
 			</div>
-			<p> copyright Lina Pan</p>
-		</div>
 		</footer>
 	</div>
 	<script
@@ -95,9 +107,14 @@
   //	console.log(h+"px");
   //	console.log(h+mainHeight);
   	$(".header-img").height(h);
+  	console.log(h);
   	$(".header-img").width(w);
   	$(".main-content").css("top",h+"px");
-    $("footer").css("top",h+"px");
+  	$(".musicians").height(h);
+  	//$(".musicians").width(w);
+  	$(".quote").height(h);
+  	//$(".quote").css("top", h+"px");
+   // $("footer").css("top",h+"px");
   </script>
   <script>
   	$("#btn").on("click", function(){
