@@ -258,29 +258,44 @@ h1.title {
 
 .foot {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	flex-direction:column;
+	justify-content: center;
 	position: relative;
 	background-color: $gray;
-	height: 100px;
+	height: 200px;
 	width: 100%;
 	
+
+	@media(min-width: 680px){
+		flex-direction: row;
+		height: 100px;
+	justify-content: space-between;
+	}
+	p {
+	display: inherit;
+	padding-top: 20px;
+	font-size: 17px;
+	color: $pink;
+	text-align: right;
+}
 }
 
 .subscribe  {
 	display: inline-block;
 	height: 20px;
 	width: 30px;
-	border: solid #fff 1px;
-}
-
-
-footer p {
-	display: inline-block;
-	font-size: 17px;
+	padding-top: 20px;
+	font-size: 2rem;
 	color: $pink;
-	text-align: right;
+
 }
+.subscribe:hover {
+	text-decoration:none;
+	font-size: 2.2rem;
+	color:$pink;
+}
+
+
 
 
 #social-media {
@@ -291,11 +306,16 @@ footer p {
 	display: inherit;
 	font-size: 2rem;
 	text-decoration: none;
-	color: $pink;
-	li{
+	a{
 		padding-right: 20px;
+		color: $pink;
+
 	}
-	
+	a:hover{
+		font-size: 2.2rem;
+
+	}
+
 }
 
 
