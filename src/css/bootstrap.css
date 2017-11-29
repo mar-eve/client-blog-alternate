@@ -5805,43 +5805,56 @@ h1.title {
 
 .main-content {
   z-index: 10;
-  opacity: 1; }
-  .main-content h1 {
-    z-index: 11;
-    background: #000;
-    color: #ecebe6;
-    padding-top: 50px;
-    margin-bottom: -110px; }
-
-main p {
-  font-family: 'NTR', sans-serif;
-  font-size: 22px; }
-
-main {
+  opacity: 1;
   position: relative;
   display: flex;
   background: white;
   flex-direction: column; }
-  main .balls {
+  .main-content article {
+    padding: 40px 5%; }
+    .main-content article img {
+      padding: 5%; }
+    .main-content article .selfie {
+      display: block;
+      float: none;
+      width: 90%;
+      height: auto;
+      margin: 0 auto; }
+      @media (min-width: 596px) {
+        .main-content article .selfie {
+          width: 50%;
+          max-width: 100%;
+          float: left; } }
+    .main-content article .horse {
+      float: none;
+      display: block;
+      width: 90%;
+      height: auto;
+      margin: 0 auto; }
+      @media (min-width: 596px) {
+        .main-content article .horse {
+          width: 50%;
+          max-width: 100%;
+          float: right; } }
+  .main-content h1 {
+    z-index: 11;
+    background: #000;
+    font-size: 35px;
+    color: #ecebe6;
+    padding: 50px 10px 0 10px;
+    margin-bottom: 0; }
+    @media (min-width: 596px) {
+      .main-content h1 {
+        font-size: 56px;
+        margin-bottom: -110px; } }
+  .main-content p {
+    font-family: 'NTR', sans-serif;
+    font-size: 22px; }
+  .main-content .balls {
     align-self: center;
     width: 100%;
     max-width: 100%;
     height: auto; }
-
-article img {
-  padding: 5%; }
-
-.selfie {
-  width: 50%;
-  max-width: 50%;
-  height: auto;
-  float: left; }
-
-.horse {
-  width: 40%;
-  max-width: 50%;
-  height: auto;
-  float: right; }
 
 footer {
   /*display: flex;
