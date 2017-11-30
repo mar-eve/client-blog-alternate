@@ -14,6 +14,9 @@ body {
 #fix {
 	position:fixed;
 }
+.mynav {
+	z-index: 100;
+}
 nav {
 	z-index: 100;
 	display: flex;

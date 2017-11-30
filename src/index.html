@@ -21,11 +21,16 @@
 	 			<li><a href="#">Blog Posts</a></li>
 	 		</ul>
 	 		</nav>
-	 		<header class="col-12 header-img">
+	 		
+	   	</div>
+	   	<div class="row" id="fix">
+	   		
+	   			<header class="col-12 header-img">
 	 			
 	 			<h1>Strawberry Pi</h1>
 	 		
 	   		</header>
+	   	
 	   	</div>
 
 	  	<div class="row">
@@ -106,9 +111,11 @@
   	//var mainHeight = $(".main-content").height();
   //	console.log(h+"px");
   //	console.log(h+mainHeight);
-  	$(".header-img").height(h);
+  	$("nav").width(w);
+  	$(".header-img").height(h-70);
   	console.log(h);
   	$(".header-img").width(w);
+  	$(".header-img").css("top","70px");
   	$(".main-content").css("top",h+"px");
   	$(".musicians").height(h);
   	//$(".musicians").width(w);
