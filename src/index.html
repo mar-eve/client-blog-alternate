@@ -9,16 +9,16 @@
 </head>
 <body>
 	<div class="container-fluid">
-		<div class = "row" id="fix">
+		<div class = "row mynav" id="fix">
 			<nav class="col-12">
 				
-				<button></button>
-				<ul id="menu">
+				<button id="btn"></button>
+				<ul>
 				<li class="logo">Strawberry Pi</li>
-	 			<li><a href="#">Home</a></li>
-	 			<li><a href="#">About</a></li>
-	 			<li><a href="#">Contact</a></li>
-	 			<li><a href="#">Blog Posts</a></li>
+	 			<li class="menu-item"><a href="#">Home</a></li>
+	 			<li class="menu-item"><a href="#">About</a></li>
+	 			<li class="menu-item"><a href="#">Contact</a></li>
+	 			<li class="menu-item"><a href="#">Blog Posts</a></li>
 	 		</ul>
 	 		</nav>
 	 		
@@ -113,7 +113,6 @@
   //	console.log(h+mainHeight);
   	$("nav").width(w);
   	$(".header-img").height(h-70);
-  	console.log(h);
   	$(".header-img").width(w);
   	$(".header-img").css("top","70px");
   	$(".main-content").css("top",h+"px");
@@ -125,13 +124,23 @@
   </script>
   <script>
   	$("#btn").on("click", function(){
-  		var m = document.getElementById("menu");
-  		if (m.style.display === "none"){
-  			m.style.display = "inline-block";
+  		//var m = document.getElementByClaa("menu-item");
+  		//if (m.style.display == "none"){
+
+	var menu = document.getElementsByClassName("menu-item");
+  		console.log($(".menu-item").css('display') );
+
+  	if( $(".menu-item").css('display') == 'none') {
+		for(var i=0; i< menu.length; i++) {
+	   		 menu[i].style.display = "block"
+		}
+	}
+
+  	else {
+  		for(var i=0; i < menu.length; i++) {
+  			menu[i].style.display = "none";
   		}
-  		else {
-  			m.style.display = "none";
-  		}
+  	}
 
   	}); 
 
