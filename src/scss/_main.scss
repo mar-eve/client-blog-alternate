@@ -258,13 +258,9 @@ h1.title {
 
 		
 	}
-}	
-
-
+	}
 .foot {
-	display: flex;
-	flex-direction:column;
-	justify-content: center;
+
 	position: relative;
 	background-color: $gray;
 	height: 200px;
@@ -274,54 +270,59 @@ h1.title {
 	@media(min-width: 680px){
 		flex-direction: row;
 		height: 100px;
-	justify-content: space-between;
+		justify-content: space-between;
+	}
+	
+
+
+	.subscribe  {
+		display: block;
+		text-align: center;
+		padding-top: 20px;
+		font-size: 2rem;
+		color: $pink;
+		@media(min-width: 680px){
+			display: inline-block;
+
+		}
+
+	}
+	.subscribe:hover {
+		text-decoration:none;
+		font-size: 2.2rem;
+		color:$pink;
+	}
+
+	#social-media {
+		display:flex;
+		justify-content:center;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		padding-top: 20px;
+		font-size: 2rem;
+		text-decoration: none;
+		
+		a{ 
+			display: inline;
+			text-align:center;
+			padding: 0 20px;
+			color: $pink;
+		}
+		a:hover{
+			font-size: 2.2rem;
+
+		}
+
 	}
 	p {
-	display: inherit;
-	padding-top: 20px;
-	font-size: 17px;
-	color: $pink;
-	text-align: right;
-}
-}
-
-.subscribe  {
-	display: inline-block;
-	height: 20px;
-	width: 30px;
-	padding-top: 20px;
-	font-size: 2rem;
-	color: $pink;
-
-}
-.subscribe:hover {
-	text-decoration:none;
-	font-size: 2.2rem;
-	color:$pink;
-}
-
-
-
-
-#social-media {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	padding-top: 20px;
-	display: inherit;
-	font-size: 2rem;
-	text-decoration: none;
-	a{
-		padding-right: 20px;
+		display: block;
+		padding-top: 20px;
+		text-align: center;
+		font-size: 20px;
 		color: $pink;
-
+		text-align: center;
 	}
-	a:hover{
-		font-size: 2.2rem;
-
-	}
-
 }
-
 
 
