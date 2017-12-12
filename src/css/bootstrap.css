@@ -5898,6 +5898,7 @@ h1.title {
       justify-content: space-between; } }
   .foot .subscribe {
     display: block;
+    text-align: center;
     padding-top: 20px;
     font-size: 2rem;
     color: #ed2461; }
