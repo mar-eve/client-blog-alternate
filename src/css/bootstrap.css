@@ -5894,12 +5894,10 @@ h1.title {
   width: 100%; }
   @media (min-width: 680px) {
     .foot {
-      flex-direction: row;
       height: 100px;
       justify-content: space-between; } }
   .foot .subscribe {
     display: block;
-    text-align: center;
     padding-top: 20px;
     font-size: 2rem;
     color: #ed2461; }
@@ -5919,6 +5917,10 @@ h1.title {
     padding-top: 20px;
     font-size: 2rem;
     text-decoration: none; }
+    @media (min-width: 680px) {
+      .foot #social-media {
+        padding-top: 0;
+        margin-top: -40px; } }
     .foot #social-media a {
       display: inline;
       text-align: center;
@@ -5933,3 +5935,7 @@ h1.title {
     font-size: 20px;
     color: #ed2461;
     text-align: center; }
+    @media (min-width: 680px) {
+      .foot p {
+        text-align: right;
+        margin-top: -69px; } }

@@ -268,7 +268,7 @@ h1.title {
 	
 
 	@media(min-width: 680px){
-		flex-direction: row;
+		
 		height: 100px;
 		justify-content: space-between;
 	}
@@ -277,13 +277,11 @@ h1.title {
 
 	.subscribe  {
 		display: block;
-		text-align: center;
 		padding-top: 20px;
 		font-size: 2rem;
 		color: $pink;
 		@media(min-width: 680px){
 			display: inline-block;
-
 		}
 
 	}
@@ -302,6 +300,10 @@ h1.title {
 		padding-top: 20px;
 		font-size: 2rem;
 		text-decoration: none;
+		@media(min-width:680px){
+			padding-top: 0;
+			margin-top: -40px;
+		}
 		
 		a{ 
 			display: inline;
@@ -322,6 +324,10 @@ h1.title {
 		font-size: 20px;
 		color: $pink;
 		text-align: center;
+		@media (min-width: 680px){
+			text-align: right;
+			margin-top:-69px;
+		}
 	}
 }
 
